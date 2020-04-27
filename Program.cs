@@ -7,10 +7,15 @@ namespace git_commit_message
         static void Main(string[] args)
         {
             Console.WriteLine(Add(1,2));
+            Console.WriteLine(Subtraction(2,1));
         }
         static int Add(int a, int b)
         {
             return a+b;
+        }
+        static int Subtraction(int a, int b)
+        {
+            return a-b;
         }
     }
 }
