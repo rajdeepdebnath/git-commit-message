@@ -18,6 +18,13 @@ namespace git_commit_message
         static int Add(params int[] values)
         {
             var result = 0;
+
+            if(values.Length > 1000000)
+            {
+                Console.WriteLine("The system do not support a million values because of resource limit!");
+                throw new Exception("Million values not supported.");
+            }
+
             foreach(var v in values)
             {
                 result += v;
